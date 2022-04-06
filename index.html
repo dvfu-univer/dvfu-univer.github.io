@@ -27,7 +27,35 @@
 <link href="/files/pass_frontend.css" rel="stylesheet">
 <link href="/files/notification.css" rel="stylesheet">
 <script>var appOptions = {"notificationUrl":"https:\/\/notify-univer.dvfu.ru\/api\/v1\/notifications","r":["undergraduate"],"t":"eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJleHAiOjE2NTE2NjMyOTMsInVpZCI6MTQ3OTgsInVzZXJuYW1lIjoiZ2FmaWlhdHVsbGluLnRmIiwicm9sZSI6ImFkbWluIn0.M_SPHVjdakp5pf8WLOknehv_bUPxg3RViy-1MZlNl30"};</script><!--</head>-->
-
+<style type="text/css">
+    .vue-modal-resizer {
+      display: block;
+      overflow: hidden;
+      position: absolute;
+      width: 12px;
+      height: 12px;
+      right: 0;
+      bottom: 0;
+      z-index: 9999999;
+      background: transparent;
+      cursor: se-resize;
+    }
+    .vue-modal-resizer::after {
+      display: block;
+      position: absolute;
+      content: '';
+      background: transparent;
+      left: 0;
+      top: 0;
+      width: 0;
+      height: 0;
+      border-bottom: 10px solid #ddd;
+      border-left: 10px solid transparent;
+    }
+    .vue-modal-resizer.clicked::after {
+      border-bottom: 10px solid #369be9;
+    }
+    </style>
 <style type="text/css">
     .v--modal-block-scroll {
       overflow: hidden;
