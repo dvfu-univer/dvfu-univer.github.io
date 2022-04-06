@@ -144,25 +144,39 @@
                     <nav class="actions-nav">
                         <ul class="nav f-M justify-content-end">
                             <li class="nav-item">
-                                <div data-v-a35d53ac="" tabindex="-1" class="nav-link pl-0"><div data-v-d084565c="" data-v-a35d53ac="" class="notification-popup shadow-dropdown d-none"><h3 data-v-d084565c="" class="nothing"><a data-v-d084565c="" href="https://univer.dvfu.ru/profile/notifications">У вас 2 уведомления</a></h3> <div data-v-d084565c="" class="notification-popup__notifications mb-2"><div data-v-6a13380c="" data-v-d084565c="" class="notify-element info"><h3 data-v-6a13380c="" class="notification-header">При проходе в корпуса ДВФУ студенты и сотрудники могут предъявить электронный пропуск на мобильном телефоне</h3> <p data-v-6a13380c="" class="created-at">10:16 6 ноября</p></div><div data-v-6a13380c="" data-v-d084565c="" class="notify-element info"><h3 data-v-6a13380c="" class="notification-header">При проезде в автобусах ДВФУ можно воспользоваться электронным билетом</h3> <p data-v-6a13380c="" class="created-at">14:01 6 ноября</p></div></div> <div data-v-d084565c="" class="d-flex justify-content-center"><button data-v-d084565c="" class="btn btn-link p-0 f-S text-uppercase">Отметить все прочитанным</button></div> <!----></div> <i data-v-a35d53ac=""><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg></i> <span data-v-a35d53ac="" class="red-dot">2</span></div>
+                                <div id="notify-widget"></div>
                             </li>
                             <li class="nav-item pl-sm-0">
-                                <a href="https://univer.dvfu.ru/pass#" class="nav-link" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                                <a href="#" class="nav-link" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true" aria-expanded="false">
                                     <div class="d-inline">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user icon-user-profile"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
-                                        <span class="d-none d-xl-inline-block"> Грушков Р. В.</span>
+                                        <i data-feather="user" class="icon-user-profile"></i>
+                                        <span class="d-none d-xl-inline-block user-profile-name" title="Гафиятуллин Т. Ф.">
+                                            Гафиятуллин Т. Ф.                                        </span>
                                         <span class="d-none d-md-inline dropdown-toggle"></span>
+                                        <div class="dropdown-menu shadow-dropdown">
+                                            <div class="dropdown-item">
+                                                <img style="width: 20px; height: 20px" src="https://univer.dvfu.ru/assets/afb53be0/img/icon-wow-coin.png"/>
+                                                <span
+                                                    data-url="/get-coin"
+                                                    id="coin-balance">
+                                                </span>
+                                            </div>
+                                            <div class="dropdown-divider"></div>
+                                            <a href="#" class="dropdown-item d-none d-md-block d-lg-none"
+                                               data-toggle="tooltip" data-placement="top"
+                                               title="Уведомления"><i
+                                                        class="icon-N mr-1" data-feather="bell"></i> Уведомления</a>
+                                            <a class="dropdown-item" href="https://univer.dvfu.ru/profile"><i
+                                                        data-feather="user" class="icon-N mr-1"></i> Профиль</a>
+                                            <a class="dropdown-item" href="https://univer.dvfu.ru/userRequest"><i
+                                                        data-feather="list" class="icon-N mr-1"></i> Мои заявки</a>
+                                            <div class="dropdown-divider"></div>
+                                                                                        <a class="dropdown-item" href="https://esa.dvfu.ru/logout"><i
+                                                        data-feather="log-out" class="icon-N"></i> Выход</a>
+                                        </div>
                                     </div>
                                 </a>
-                                <div class="dropdown-menu shadow-dropdown">
-                                    <div class="dropdown-item"><img style="width: 20px; height: 20px" src="./Заказ пропусков 1_files/icon-wow-coin.png"> – 0</div>
-                                    <div class="dropdown-divider"></div>
-                                    <a href="https://univer.dvfu.ru/pass#" class="dropdown-item d-none d-md-block d-lg-none" data-toggle="tooltip" data-placement="top" title="Уведомления"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell icon-N mr-1"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg> Уведомления</a>
-                                    <a class="dropdown-item" href="https://univer.dvfu.ru/profile"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-user icon-N mr-1"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg> Профиль</a>
-                                    <a class="dropdown-item" href="https://univer.dvfu.ru/userRequest"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-list icon-N mr-1"><line x1="8" y1="6" x2="21" y2="6"></line><line x1="8" y1="12" x2="21" y2="12"></line><line x1="8" y1="18" x2="21" y2="18"></line><line x1="3" y1="6" x2="3" y2="6"></line><line x1="3" y1="12" x2="3" y2="12"></line><line x1="3" y1="18" x2="3" y2="18"></line></svg> Мои заявки</a>
-                                    <div class="dropdown-divider"></div>
-                                                                        <a class="dropdown-item" href="https://esa.dvfu.ru/logout"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-log-out icon-N"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"></path><polyline points="16 17 21 12 16 7"></polyline><line x1="21" y1="12" x2="9" y2="12"></line></svg> Выход</a>
-                                </div>
                             </li>
                         </ul>
                     </nav>
